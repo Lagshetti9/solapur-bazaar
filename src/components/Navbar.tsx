@@ -15,12 +15,8 @@ import {
 } from "lucide-react";
 import { useCart } from "@/context/CartContext";
 
-const NAV_LINKS = [
-    { label: "Home", href: "/" },
-    { label: "All Products", href: "/#products" },
-    { label: "Electronics", href: "/?category=smartphones#products" },
-    { label: "Fashion", href: "/?category=mens-shirts#products" },
-];
+
+
 
 export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -177,31 +173,19 @@ export default function Navbar() {
             {/* Desktop navigation */}
             <nav className="hidden border-t border-gray-100 md:block">
                 <div className="mx-auto flex max-w-7xl items-center gap-8 px-4">
-                    {NAV_LINKS.map((link) => (
-                        <Link
-                            key={link.label}
-                            href={link.href}
-                            className="border-b-2 border-transparent py-3.5 text-sm font-medium text-gray-600 transition hover:border-[#BD243D] hover:text-[#BD243D]"
-                        >
-                            {link.label}
-                        </Link>
-                    ))}
+
+
+
+
                 </div>
             </nav>
 
             {/* Mobile navigation */}
             {menuOpen && (
                 <nav className="border-t border-gray-100 bg-white px-4 py-3 shadow-lg md:hidden">
-                    {NAV_LINKS.map((link) => (
-                        <Link
-                            key={link.label}
-                            href={link.href}
-                            onClick={() => setMenuOpen(false)}
-                            className="block rounded-lg px-3 py-3 text-sm font-semibold text-[#132B46] transition hover:bg-rose-50 hover:text-[#BD243D]"
-                        >
-                            {link.label}
-                        </Link>
-                    ))}
+
+
+
 
                     <Link
                         href="/account"
