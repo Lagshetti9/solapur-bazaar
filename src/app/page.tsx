@@ -48,7 +48,7 @@ export default async function Home() {
         aria-label="Shop categories"
         className="border-b border-gray-200 bg-white"
       >
-        <div className="mx-auto flex max-w-[1500px] gap-2 overflow-x-auto px-3 py-2 sm:gap-3 sm:px-5">
+        <div className="mx-auto flex max-w-375 gap-2 overflow-x-auto px-3 py-2 sm:gap-3 sm:px-5">
           {categories.map((category, index) => (
             <Link
               key={category.name}
@@ -65,9 +65,9 @@ export default async function Home() {
       </nav>
 
       {/* Small, responsive hero */}
-      <section className="mx-auto max-w-[1500px] px-3 pt-3 sm:px-5">
-        <div className="relative overflow-hidden rounded-xl bg-gradient-to-r from-[#132B46] to-[#315B80] text-white">
-          <div className="flex min-h-[190px] items-center justify-between gap-4 px-5 py-6 sm:min-h-[220px] sm:px-8 md:px-10">
+      <section className="mx-auto max-w-375 px-3 pt-3 sm:px-5">
+        <div className="relative overflow-hidden rounded-xl bg-linear-to-r from-[#132B46] to-[#315B80] text-white">
+          <div className="flex min-h-47.5 items-center justify-between gap-4 px-5 py-6 sm:min-h-55 sm:px-8 md:px-10">
             <div className="max-w-2xl">
               <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.2em] text-rose-300 sm:text-xs">
                 Welcome to SolapurMart.shop
@@ -107,7 +107,7 @@ export default async function Home() {
       </section>
 
       {/* Compact benefits */}
-      <section className="mx-auto grid max-w-[1500px] grid-cols-3 gap-2 px-3 py-3 sm:gap-3 sm:px-5">
+      <section className="mx-auto grid max-w-375 grid-cols-3 gap-2 px-3 py-3 sm:gap-3 sm:px-5">
         {benefits.map(({ Icon, title, subtitle }) => (
           <div
             key={title}
@@ -132,7 +132,7 @@ export default async function Home() {
       {/* Product section — preserve your existing filters */}
       <section
         id="products"
-        className="mx-auto max-w-[1500px] scroll-mt-4 px-3 pb-8 pt-1 sm:px-5"
+        className="mx-auto max-w-375 scroll-mt-4 px-3 pb-8 pt-1 sm:px-5"
       >
         <div className="mb-3 flex items-center justify-between rounded-lg border border-gray-100 bg-white px-3 py-3 sm:px-4">
           <div>
